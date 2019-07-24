@@ -1,3 +1,17 @@
-h1 {
-  color: blue;
+.sub{
+  color:darkgray;
+}
+
+.card-img-top{
+  max-width:200px;
+  max-height:200px;
+}
+.card{
+  border-style: none;
+  display:inline-block;
+  max-width: 40vw;
+  max-height: 30vh;
+  margin-top: 10vh;
+  margin-left: 3%;
+  text-align: center;
 }
