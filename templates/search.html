@@ -9,7 +9,6 @@
 </head>
 
 <body>
-  <!-- NAV BAR -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">J A Z Z H U B</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,23 +28,11 @@
         </li>
       </ul>
       <form form method=”post” action="/search" class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search" aria-label="Search">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
   </nav>
-  {% for item in store_info %}
-  <div class="card" style="width: 18rem;">
-    <img src = {{item.product_image}}  class="card-img-top" alt=" bro its merch">
-    <div class="card-body">
-        <h1 class="card-text">{{item.product_name}}</h1>
-      <p class="card-text sub">{{item.product_price}}</p>
-            <p class="card-text sub">{{item.product_status}}</p>
-
-    </div>
-  </div>
-
-  {% endfor %}
   <!-- imports all script files including project's script.js file, jQuery, and bootstrap script files -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -9,10 +9,11 @@
 .card{
   border-style: none;
   display:inline-block;
-  max-width: 40vw;
+  max-width: 18%;
   max-height: 30vh;
   margin-top: 10vh;
-  margin-left: 3%;
+  margin-left:3%;
+  margin-right:3%;
   text-align: center;
 }
 .carol{
