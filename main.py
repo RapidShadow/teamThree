@@ -37,9 +37,10 @@ class StoreHandler(webapp2.RequestHandler):
         self.response.write(store_template.render({'store_info' : store}))
 class SearchHandler(webapp2.RequestHandler):
     def get(self):
-        search = Products.query().fetch()
-        search_template = the_jinja_env.get_template("templates/search.html")
         searchkey = self.request.get("search")
+        search = Products.query().fetch()
+        searchfiltered = search.add_filter()
+        search_template = the_jinja_env.get_template("templates/search.html")
         template_vars = { 'searchterm': searchkey }
         self.response.write(search_template.render(template_vars))
 app = webapp2.WSGIApplication([
