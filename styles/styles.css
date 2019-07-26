@@ -19,3 +19,46 @@
 .carol{
   max-height:80vh;
 }
+.modalImg{
+  max-width:40vh;
+  max-height:40vw;
+  margin-left:2rem;
+  margin-top: auto;
+  margin-bottom: : auto;
+}
+.modal-body{
+  text-align: left;
+  font-size:20px;
+}
+.modal-header{
+  border-style: none;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#buttons{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: right;
+  margin-right: 1rem;
+}
+.modal-title{
+  text-align:left;
+  margin-bottom: 1rem;
+}
+.wrapper{
+  text-align: center;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+.desc{
+  text-align: left;
+  margin-right: 2rem;
+}
